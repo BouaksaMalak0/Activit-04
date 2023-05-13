@@ -1,0 +1,195 @@
+<html>
+ 
+<style>
+
+body {
+            background-color: #fce6e6; /* Utilisation d'une couleur de fond pastel */
+            font-family: 'Pacifico', cursive;
+            font-size: 16px;
+            line-height: 1.5;
+            padding: 20px;
+        }
+    h1 {
+        color: #ff80bf; /* Utilisation d'une couleur vive pour les titres */
+        background-color: #fff;
+        box-shadow: 2px 2px 2px #f2f2f2;
+        text-align: center;
+        margin-top: 50px;
+        padding: 10px;
+        border-radius: 10px; /* Ajout d'une bordure arrondie */
+    }
+    h2 {
+  color: purple; /* Ajout de la propriété color pour les sous-titres */
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+  border-bottom: 2px solid #ff80bf;
+  text-shadow: 1px 1px #f2f2f2;
+  margin-bottom: 20px;
+}
+
+p {
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: #ff80bf;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+img {
+    max-width: 100%;
+height: auto;
+}
+.fancy-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    color: #ff69b4;
+    text-shadow: 2px 2px #ccc;
+    margin-bottom: 20px;
+}
+
+.pink-border {
+    border: 1px solid #ff69b4;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.pink-background {
+    background-color: #ff69b4;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.pink-button {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.pink-button:hover {
+    background-color: #d6408c;
+}
+
+
+</style>
+
+<head>
+<link rel="stylesheet" href="chap.css"/>
+<title>Chapitre-5-</title>
+</head>
+ 
+<body>
+ 
+ <h1>Chapitre5-Systéme de Gestion de Version</h1>
+ 
+<h2>1) Introduction</h2>
+<p>Dans ce chapitre, on définira Git et GitHub pour éviter les confusions futures, et on comprendra l'importance de Git et des systèmes de gestion de version dans le monde d'aujourd'hui.
+Git est un logiciel de versioning créé en 2005 par Linus Torvalds. Il sauvegarde les modifications d'un projet pour pouvoir les retrouver rapidement ou revenir à une ancienne version en cas de souci. Les logiciels de gestion de versions sont indispensables pour la gestion de projets en équipe.
+Git est le leader incontesté et est donc indispensable pour les développeurs. </P>
+
+<h2> 2) A quoi sert concrètement un système de gestion de version ?</h2>
+<p>Si vous avez un site web, vous devez effectuer une sauvegarde avant toute modification pour éviter les erreurs potentielles.
+Le procédé est contraignant : sauvegarde complète et restauration en cas de problème. Mais c'est faisable. <br>
+Si 10 personnes travaillent sur le même site web en développant des fonctionnalités liées, cela peut devenir complexe.
+Le travail est complexe car il faut éviter les conflits entre les fonctionnalités des développeurs et assurer la cohérence du travail collectif.
+Un serveur distant est recommandé pour faciliter l'accès à l'historique des modifications. 
+ Les développeurs peuvent copier tout le contenu du serveur pour travailler sur leur machine, créant ainsi un système de gestion de version décentralisé rudimentaire.
+Les logiciels de versioning, dont Git, permettent de réaliser ces opérations de manière robuste et avec des fonctionnalités avancées, telles que la synchronisation avec le serveur, l'accès à d'autres projets et la mise à jour automatique des différences.
+Git facilite la coordination de travail entre plusieurs personnes et offre un historique des changements effectués sur les fichiers. 
+ Git conserve l'historique des modifications pour un projet, permettant aux développeurs de suivre les changements et leur origine.</p>
+<h2>3) Les deux modèles des logiciels de gestion de version : modèle centralisé vs modèle décentralisé</h2>
+<p>Les logiciels de gestion de version sont construits sur deux modèles : centralisé et décentralisé .
+Le modèle centralisé centralise le code source sur un serveur distant, obligeant les utilisateurs à y accéder pour travailler sur le code du projet.
+Dans un modèle distribué, le code source est hébergé sur un serveur distant mais chaque utilisateur héberge également le code sur sa propre machine.<br>
+Ce modèle, popularisé par Git, présente des avantages tels que la simplicité et la flexibilité pour travailler hors ligne, ainsi qu'une meilleure sécurité grâce aux copies de sauvegarde sur les machines des utilisateurs.</p>
+
+<h2>4) Qu’est-ce que GitHub ?</h2>
+<p>Git est un logiciel permettant de gérer les versions d'un projet et de revenir à une version antérieure.
+En gestion de version, une copie de tous les fichiers et versions depuis le serveur est appelée un dépôt ou repo.
+GitHub héberge des dépôts Git, en étant le leader mondial.
+Sur GitHub, la plupart des dépôts sont publics, ce qui permet à quiconque de télécharger leur code et de proposer des fonctionnalités. 
+ En résumé, Git gère les versions et GitHub héberge les dépôts en tant que serveur central.</p>
+ 
+<h2>5) Utiliser Git : ligne de commande, console et interface graphique</h2>
+<p>Différentes interfaces sont disponibles pour Git.
+Ici, nous optons pour la console et un langage en lignes de commande plutôt qu'une interface graphique.
+Nous choisissons d'utiliser la ligne de commande pour plusieurs raisons : elle permet d'accéder à toutes les commandes Git, tout le monde peut suivre le cours de la même façon et savoir utiliser la version en ligne de commande facilitera l'utilisation de toutes les autres interfaces graphiques. 
+ Pour ouvrir la ligne de commande sur Windows, suivez les étapes suivantes : 1. Réduit : Tapez + cmd 2 et cherchez cmd.</p>
+<h2>6) Installation de Git</h2>
+<p>Pour installer Git facilement, téléchargez la dernière version sur le site officiel http://git-scm.com/downloads, ouvrez le fichier et suivez les instructions à l'écran sans modifier les valeurs par défaut.</p>
+<h2>7) Paramétrage de Git</h2>
+<p>Après avoir installé Git, nous allons configurer le logiciel en y enregistrant nos informations personnelles, telles que notre nom d'utilisateur et notre adresse e-mail, pour faciliter l'utilisation ultérieure. Avec la commande git config, nous pouvons modifier les paramètres qui contrôlent Git. Nous allons ajouter l'option --global pour personnaliser le comportement par défaut de la commande. L'option --global de Git utilise le nom d'utilisateur et l'adresse mail renseignés pour tous les projets. Pour cela, tapez la commande : git config --global user. Simplify text: "Bouchekir Redouane" and "git config --global user.email redouane." Saisissez bouchekir@gmail.com pour nom et adresse email. Utilisez votre nom et email pour enregistrer vos informations. Vérifiez en tapant git config user. Configurer user.name et user.email dans Git.
+Renvoyer les infos saisies.</p>
+<h2>8) Démarrer un dépôt Git</h2>
+<p>Un dépôt Git implique la copie et l'importation de fichiers d'un projet.
+Deux méthodes sont possibles : importer un répertoire existant ou cloner un dépôt déjà existant. Comment utiliser Git : Comprendre sa gestion l'information et son fonctionnement.</p>
+<h2>9) La gestion des informations selon Git</h2>
+<p>Git aborde les données avec une approche unique en considérant des instantanés ou "snapshots". Quand on valide un projet dans Git, on enregistre un instantané du contenu de l'espace de travail pour y accéder plus tard. 
+ Chaque instantané est stocké localement dans une base de données. Avoir l'historique complet d'un projet localement permet de réaliser la plupart des opérations de Git sans connexion au serveur central, rendant le travail plus rapide et agréable.</p>
+<h2>10) Les états des fichiers</h2>
+<p>Comment Git suit-il les fichiers d'un projet ? Un fichier peut être "suivi" ou "non suivi".
+Un fichier est "suivi" s'il est enregistré en base après avoir appartenu au dernier instantané capturé par Git, tandis qu'un fichier qui n'a pas été indexé et qui n'appartenait pas au dernier instantané est considéré comme "non suivi". Pour initialiser un dépôt Git avec un répertoire existant, les fichiers sont non suivis.
+Git doit alors les indexer et les valider pour les enregistrer en base.
+En clonant un dépôt Git existant, tous les fichiers sont copiés avec leur historique et sont déjà suivis par défaut. Les fichiers peuvent être modifiés, indexés ou validés. Lors du démarrage d'un dépôt Git, les fichiers sont validés et stockés dans la base de données locale.
+En clonant un dépôt existant, les fichiers sont automatiquement enregistrés en base et validés.
+Par la suite, de nouveaux fichiers seront ajoutés ou des fichiers existants seront modifiés lors du travail sur le projet. Les fichiers modifiés sont considérés comme tels par Git tant qu'ils ne sont pas indexés, tandis que les nouveaux fichiers ne sont pas suivis. On "indexe" un fichier pour qu'il fasse partie de l'instantané actuel sous Git.
+Lorsque l'instantané est enregistré, les fichiers indexés et non modifiés sont considérés comme "validés". Le cycle peut alors recommencer. </p>
+<h2>11) Les zones de travail</h2>
+<p>Les fichiers ont des états associés à des zones dans Git, qui déterminent où ils apparaissent en fonction de leur état. Un projet Git comprend trois sections : le répertoire de travail, la zone d'index et le répertoire Git. Le répertoire de travail est l'extraction d'une version du projet. Les fichiers extraits de la base de données compressée de Git sont stockés sur le disque pour la modification. La zone d'index ou "staging area" stocke les informations pour le prochain "commit". Le Git conserve les méta-données et la base d'objets du projet, soit son essence. Le processus de travail consiste à travailler sur nos fichiers dans le répertoire de travail, puis à indexer les modifications ou créations de fichiers.
+Un fichier non indexé est modifié ou nouveau, mais devient indexé une fois traité. Lorsque nom ajouté à l'index, il est indexé et validé pour être ajouté au répertoire Git. </p>
+<h2>12) Créer un dépôt Git à partir d’un répertoire existant</h2>
+<p>En démarrant avec Git, il est courant d'avoir des projets en cours stockés localement ou sur un serveur distant.
+Pour implémenter un système de gestion de version, il est possible d'importer toutes les ressources du projet dans Git. Pour la leçon suivante, j'ai créé un répertoire nommé "projet-git" contenant deux fichiers texte vides, nommés "fichier1.txt" et "README", sur mon bureau. Ce répertoire sera la base des exemples à venir (répertoire importé). Dans cmd, la commande "cd " vous permet de vous positionner dans le PC.
+Placer dans un répertoire. Afficher la liste des dossiers et fichiers actuels avec dir.
+Pour créer un dépôt Git, on utilise la commande git init qui crée un sous-répertoire. 
+ Git est un ensemble de fichiers pour le dépôt Git. En initialisant avec git init, le dépôt est vide et bien initialisé. C'est normal car aucun fichier n'a été versionné. Utilisez la commande git status pour vérifier l'état des fichiers. Cette commande est très utile et je l'utilise souvent personnellement : git status indique que notre projet a deux fichiers non suivis ("untracked"), à savoir "README.txt" et "fichier1". Il mentionne qu'aucun fichier n'a été validé ni ajouté pour le moment.
+On indexe nos fichiers avec git add pour pouvoir les valider et les historiser. On peut indexer un fichier en lui passant un nom, plusieurs fichiers d'un répertoire ou tous les fichiers correspondant à un schéma via les fileglobs. Les extensions de chemin de fichier sont utilisées pour les fileglobs. Certains caractères (comme * et ?) ont une signification spéciale, permettant de créer des schémas de correspondance. Le * correspond à n'importe quel caractère. En tapant git add *.txt, j'inclus tous les fichiers du projet ayant l'extension .txt dans l'index de Git. Git status indique l'ajout de deux nouveaux fichiers à l'index. git add : indexer des fichiers existants et ajouter des fichiers non suivis. Les fichiers ont été ajoutés avec succès car ils figurent dans "modifications à valider". Pour ajouter les fichiers en base, on utilise "git commit". Sans argument, cette commande ouvre l'éditeur par défaut (souvent VIM). Ajouter un message lors du commit permet une documentation claire des modifications pour les auteurs et contributeurs afin de faciliter leur validation.
+C'est une étape importante de Git. J'ajoute le message "Version initiale du projet".
+Pour enregistrer et quitter, utilisez la touche "esc", puis tapez :wq, :x ou ZZ.
+Après un autre git status, Git indique qu'il n'y a plus de fichiers non suivis, ce qui implique que tous les fichiers sont enregistrés et qu'aucune modification n'a été faite depuis le dernier commit.</p>
+<h2>13) Cloner un dépôt Git</h2>
+<p>Pour cloner un dépôt Git, utilisez Git clone. Créez votre repo sur GitHub et transmettez vos fichiers.
+git branch -M main & git remote add origin https://github.com/BouchekirRedouane/ExmpleCloneGit.git push -u origin main.
+Si on vérifier notre repo sur GitHub, on peut voir les deux fichiers ; </p>
+
+<h2> 14) Ajouter ou modifier des fichiers dans un projet et actualiser notre dépôt Git</h2>
+<p>Nous avons un projet avec un dépôt Git pour gérer les versions.
+Nous travaillons sur les fichiers qui peuvent être modifiés ou supprimés.
+On enregistre les changements sur Git pour avoir un historique des versions.
+On peut ainsi revenir à une version précédente en cas de bogue ou de résultat non souhaité.
+Pour ajouter ou modifier des fichiers dans le dépôt Git, on utilise les commandes git add et git commit. 
+ Attention au commit d'un fichier : seule la version sauvegardée lors du git add sera validée, les modifications postérieures ne seront pas enregistrées.
+Pour enregistrer la dernière version d'un fichier, faites un git add avant le git commit ou utilisez git commit -a pour valider les fichiers sous suivi. 
+ Pas besoin de taper "git add".</p>
+ 
+<h2>15) Consulter l’historique des modifications Git</h2>
+<p>Pour voir l'historique des modifications Git, utilisez simplement la commande git log pour afficher les derniers commits. 
+ Les commits affichent par défaut leur SHA-1, l'auteur, la date et leur message.</p>
+ 
+<h2>16) Annuler des modifications apportées à un fichier</h2>
+<p>Un avantage clé d'un logiciel de gestion de vision est la capacité à effectuer un "roll back" vers une version précédente d'un projet.
+Après un commit, on poursuit la modification des fichiers. 
+ Pour annuler des modifications, utilisez la commande git checkout -- nom-du-fichier ou git restore.</p>
+ 
+<h2>17) Qu’est ce qu’une branche ?</h2>
+<p>Créer une branche permet de tester de nouvelles fonctionnalités sans impacter le projet de base.
+Cependant, la création de branches peut être contraignante et lourde dans les systèmes de contrôle de version car elle implique une copie physique de l'ensemble du répertoire de travail.
+Git facilite la création et la fusion de branches grâce à son approche unique.
+Une branche est simplement un pointeur vers un commit, représenté par un fichier avec l'empreinte SHA-1 du commit.
+Un commit Git contient le nom de l'auteur, le message et un pointeur vers l'instantané du contenu et les commits précédents.
+Le pointeur est l'adresse d'une donnée stockée. Le pointeur accède aux données et la branche par défaut de Git est "master".
+En tapant "git init", une branche nommée "master" est créée automatiquement. On peut la renommer, mais cela n'est souvent pas nécessaire.
+En bref, une branche pointe vers un commit et contient des références vers le contenu indexé et les commits précédents. 
+ Créer une nouvelle branche dans Git ne copie pas tout le répertoire, mais crée un nouveau pointeur.</p>
+</body>
+ 
+</html>
